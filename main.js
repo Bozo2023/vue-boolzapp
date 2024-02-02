@@ -4,6 +4,10 @@ const { createApp }=Vue
 createApp({
   data(){
       return{
+        user:{
+            name:'Nome Utente',
+            avatar:'_io'
+        },
         contacts: [
             {
             name: 'Michele',
