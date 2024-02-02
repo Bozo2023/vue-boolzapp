@@ -18,7 +18,8 @@ body{
 }
 .fa-circle-notch,
 .fa-comment-alt,
-.fa-ellipsis-v{
+.fa-ellipsis-v,
+.fa-paperclip{
 	color: #B0B1B3;
 }
 #col-left-notifiche{
@@ -34,4 +35,25 @@ body{
 }
 .fa-search{
 	color: #b6b9bd;
+}
+#basic-addon1{
+	background-color:#fff;
+	border: 0;
+}
+.form-control{
+	border: 0;
+}
+#app{
+	height: 97%;
+}
+#app .row{
+
+}
+#col-left-chats{
+	/* border: 1px solid black; */
+	
+}
+.ultimo_messaggio{
+	font-size: 12px;
+	color: #c6bebd;
 }

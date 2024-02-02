@@ -10,10 +10,10 @@
 		<link rel="stylesheet" href="style.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	</head>
-	<body>
-		<div id="app" class="container py-5">
-			<div   class="row ">
-				<div id="col-left" class=" col-4 border px-0">
+	<body class="py-5">
+		<div id="app" class="container ">
+			<div   class="row h-100">
+				<div id="col-left" class=" col-4 border px-0 d-flex flex-column">
 					<div id="col-left-top" class="p-2 d-flex align-items-center
 							justify-content-between" >
 						<div class=" d-flex align-items-center">
@@ -36,7 +36,7 @@
 					
 					</div>
 
-				<div Id="col-left-notifiche" class="p-2 align-items-center gap-4" >
+					<div Id="col-left-notifiche" class="p-2 align-items-center gap-4" >
 						<div id="bell" class="rounded-circle bg-light">
 							<i class="far fa-bell-slash " aria-hidden="true"></i>
 
@@ -48,23 +48,79 @@
 							<a href=""> Attiva notifiche desktop</a>
 						</div>
 					</div>		
-					<div id="col-left-search" class="p-2">
+					<div id="col-left-search" class="p-2 ">
 							<div class="input-group ">
 								<span class="input-group-text" id="basic-addon1">
 									<i class="fas fa-search" aria-hidden="true"></i>
 								</span>
 								<input type="text" class="form-control" placeholder="Cerca o inizia chat" aria-label="Username" aria-describedby="basic-addon1">
-							  </div>
+							</div>
 
 					</div>
+					<div id="col-left-chats" 
+					class="h-100 d-flex flex-grow-1  bg-light overflow-y-scroll">
+						<div class=" w-100 ">
+							<div class=" d-flex align-items-center justify-content-between gap-2 p-3 border">
+								<div class="d-flex align-items-center">
+									<figure>
+										<img src="./img/avatar_1.jpg" 
+											class="rounded-circle" width="65"
+											alt="">
+									</figure>
+									<div>
+										<span>
+										michele
+									</span>
+									<p class="ultimo_messaggio">
+										ultimo messaggio inviato
+									</p>	
+									</div>
+									
+								</div>
+								<div>
+									<span>15:00</span>
+								</div>
+							</div>
+							
+
+						</div>
+						
+					</div>	
+
 					
+				</div>	
 
-			</div>
+			
 
 
-			<div id="col-right" class=" col-8 border">
+						<div id="col-right" class=" col-8 border">
 
-			</div>
+			
+							<div id="col-left-top" class="p-2 d-flex align-items-center
+							justify-content-between" >
+						<div class=" d-flex align-items-center">
+							<figure>
+								<img src="./img/avatar_1.jpg" 
+									class="rounded-circle"
+									width="65"
+									alt="avatar personale">
+							</figure>
+							<span>michele</span>
+
+						</div>
+						<div class="d-flex gap-4">
+						<i class=" fas fas fa-search"></i>
+						<i class="far fas fa-paperclip"></i>
+						<i class="fas fa-ellipsis-v"></i>
+
+						</div>
+
+					
+					</div>
+
+			
+			
+						</div>
 			</div>
 			
 
