@@ -8,7 +8,8 @@ createApp({
             name:'Nome Utente',
             avatar:'_io'
         },
-        contacts: [
+        contacts:
+         [
             {
             name: 'Michele',
             avatar: '_1',
@@ -91,14 +92,15 @@ createApp({
             status: 'received'
             }
             ],
+            
             },
             
           
            
             
-        ]
+        ],
          
-
+        activeChat:0
       }
   },
   created(){

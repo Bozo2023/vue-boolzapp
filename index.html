@@ -127,18 +127,24 @@
 						<div id="col-right-chat" 
 						class=" flex-grow-1  overflow-y-scroll p-3">
 						
-								<div class="sent p-3 rounded ms-auto position-relative">
+								<div
+								v-for="(element, index) in contacts[ activeChat ].messages"
+								class=" p-3 rounded  position-relative mb-4"
+								:class="(element.status === 'sent') ? 'sent ms-auto' : 'received bg-light' ">
+								
+								
+								 
 									<p class="m-0">
-										hai portato a spasso il cane?
+										{{element.message}}
 									</p>
 									<span>
-									15:00
+										{{element.date}}
 									</span>
 								</div>
 								
 								
 						
-						
+<!-- 						
 							<div class="received bg-light p-3 rounded position-relative">
 								<p class="m-0">
 									hai portato a spasso il cane?
@@ -148,7 +154,7 @@
 								</span>
 
 							</div>
-							
+							 -->
 					
 								
 
