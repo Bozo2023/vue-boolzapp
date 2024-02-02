@@ -100,13 +100,28 @@ createApp({
             
         ],
          
-        activeChat:0
+        activeChat:0,
+        newText:''
       }
   },
   created(){
       
   },
   methods:{
+    changeChat(index){
+      // console.log( index )
+      this.activeChat = index
+    },
+    newMessage(){
+      this.contacts[ this.activeChat].message.push(
+        {
+          date: '10/01/2020 15:50:00',
+            message: this.newText ,
+            status: 'received'
+
+        }
+      )
+    }
       
 
   }
