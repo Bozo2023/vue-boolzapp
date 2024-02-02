@@ -12,9 +12,9 @@
 	</head>
 	<body>
 		<div id="app" class="container py-5">
-			<div   class="row px-0">
-				<div id="col-left" class=" col-4 border">
-					<div id="col-left-top" class="py-2 d-flex align-items-center
+			<div   class="row ">
+				<div id="col-left" class=" col-4 border px-0">
+					<div id="col-left-top" class="p-2 d-flex align-items-center
 							justify-content-between" >
 						<div class=" d-flex align-items-center">
 							<figure>
@@ -36,12 +36,28 @@
 					
 					</div>
 
-				<div Id="col-left-notifiche" >
-						<div class="rounded-circle bg-light">
+				<div Id="col-left-notifiche" class="p-2 align-items-center gap-4" >
+						<div id="bell" class="rounded-circle bg-light">
 							<i class="far fa-bell-slash " aria-hidden="true"></i>
 
 						</div>
-				</div>		
+						<div>
+							<h3 class="fs-6">
+								Ricevi notifiche di nuovi messaggi
+							</h3>
+							<a href=""> Attiva notifiche desktop</a>
+						</div>
+					</div>		
+					<div id="col-left-search" class="p-2">
+							<div class="input-group ">
+								<span class="input-group-text" id="basic-addon1">
+									<i class="fas fa-search" aria-hidden="true"></i>
+								</span>
+								<input type="text" class="form-control" placeholder="Cerca o inizia chat" aria-label="Username" aria-describedby="basic-addon1">
+							  </div>
+
+					</div>
+					
 
 			</div>
 
