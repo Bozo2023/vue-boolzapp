@@ -61,4 +61,24 @@ body{
 #col-right-chat{
 	background-image: url("./img/mine.jpg");
 }
+.fa-smile,
+.fa-microphone{
+	font-size: 24px;
+	color:#6c7377 ;
+}
+#col-right-chat .sent{
+	background-color: #d8f8bf;
+}
+.sent,
+.received{
+	width: 40%;
+}
+.sent span,
+.received span{
+	position: absolute;
+	bottom: 5px;
+	right: 10px;
+	font-size: 12px;
+	color: #c6bebd; 
+	}
 
