@@ -113,15 +113,30 @@ createApp({
       this.activeChat = index
     },
     newMessage(){
-      this.contacts[ this.activeChat].message.push(
+      let data = new Date()
+      let anno= data.getFullYear()
+      let mese= data.getMonth() + 1
+      let giorno= data.getDate()
+      
+      let ore = data.getHours()
+      let min = data.getMinutes()
+      let second = data.getSeconds()
+
+
+
+      this.contacts[ this.activeChat].messages.push(
         {
-          date: '10/01/2020 15:50:00',
+          date: `${ore}/${min}/${second} ${giorno}/${mese}/${anno} ` ,
             message: this.newText ,
-            status: 'received'
+            status: 'sent'
 
         }
       )
-    }
+        setTimeoout( () => {
+          
+        })
+
+    } 
       
 
   }
