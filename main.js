@@ -131,10 +131,21 @@ createApp({
             status: 'sent'
 
         }
+
       )
+
+      this.newText=''
+
         setTimeoout( () => {
+          this.contacts[ this.activeChat].messages.push(
+            {
+              date: `${ore}/${min}/${second} ${giorno}/${mese}/${anno}` ,
+                message: 'ok' ,
+                status: 'received'
+            }
+          )
           
-        })
+        },1000)
 
     } 
       
