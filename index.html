@@ -54,7 +54,13 @@
 								<span class="input-group-text" id="basic-addon1">
 									<i class="fas fa-search" aria-hidden="true"></i>
 								</span>
-								<input type="text" class="form-control" placeholder="Cerca o inizia chat" aria-label="Username" aria-describedby="basic-addon1">
+								<input type="text"
+								 class="form-control" 
+								 placeholder="Cerca o inizia chat" 
+								 aria-label="Username"
+								  aria-describedby="basic-addon1"
+								  v-model="searchText"
+								  keyup="searchContact">
 							</div>
 
 					</div>
@@ -63,10 +69,14 @@
 						<div class=" w-100 ">
 							
 							<div 
-
 							v-for="(element, index) in contacts"
 							@click="changeChat( index )"
-							class=" d-flex align-items-center justify-content-between gap-2 p-3 border">
+
+							class="  p-2 border"
+							:class=" element.visible ? 'd-flex align-items-center justify-content-between gap-2' : '' "
+							v-show="element.visible ">
+
+							
 								<div class="d-flex align-items-center">
 									<figure>
 										<img :src=" `./img/avatar${element.avatar}.jpg `" 

@@ -101,7 +101,8 @@ createApp({
         ],
          
         activeChat:0,
-        newText:''
+        newText:'',
+        searchText:''
       }
   },
   created(){
@@ -147,7 +148,19 @@ createApp({
           
         },1000)
 
-    } 
+    } ,
+    searchText(){
+      this.contacts.forEach((element ) => {
+        if(element.name.toLowerCase().includes( this.searchText.toLowerCase() ) ){
+          element.visible= true
+        } else {
+          element.visible= false
+
+
+        }
+        
+      })
+    }
       
 
   }
